@@ -1,46 +1,47 @@
 {
-  "name": "@scratch-fuse/core",
-  "version": "1.0.0",
-  "description": "The core of fuse language",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsup src/index.ts --watch",
-    "lint:type": "tsc --noEmit",
-    "build": "tsup src/index.ts",
-    "format": "prettier --write ."
-  },
-  "author": "FurryR",
-  "license": "MPL-2.0",
-  "dependencies": {
-    "@scratch-fuse/utility": "github:scratch-fuse/utility#build"
-  },
-  "devDependencies": {
-    "@types/node": "^24.5.2",
-    "prettier": "^3.6.2",
-    "tsup": "^8.5.0",
-    "typescript": "^5.9.2"
-  },
-  "homepage": "https://github.com/scratch-fuse/core#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/scratch-fuse/core.git"
-  },
-  "bugs": {
-    "url": "https://github.com/scratch-fuse/core/issues"
-  },
-  "keywords": [
-    "scratch",
-    "blocks",
-    "parser",
-    "script",
-    "fuse"
-  ],
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ]
+    "name": "@scratch-fuse/core",
+    "version": "1.0.0",
+    "description": "The core of fuse language",
+    "keywords": [
+        "blocks",
+        "fuse",
+        "parser",
+        "scratch",
+        "script"
+    ],
+    "homepage": "https://github.com/scratch-fuse/core#readme",
+    "bugs": {
+        "url": "https://github.com/scratch-fuse/core/issues"
+    },
+    "license": "MPL-2.0",
+    "author": "FurryR",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/scratch-fuse/core.git"
+    },
+    "files": [
+        "dist",
+        "LICENSE",
+        "README.md"
+    ],
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "dev": "tsup src/index.ts --watch",
+        "lint:type": "tsc --noEmit",
+        "lint": "oxlint",
+        "format": "oxfmt",
+        "build": "tsup src/index.ts"
+    },
+    "dependencies": {
+        "@scratch-fuse/utility": "github:scratch-fuse/utility#build"
+    },
+    "devDependencies": {
+        "@types/node": "^24.5.2",
+        "oxfmt": "^0.70.0",
+        "oxlint": "^1.85.0",
+        "tsup": "^8.5.0",
+        "typescript": "5.9.3"
+    }
 }

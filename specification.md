@@ -297,21 +297,21 @@ Literal = Number | String | Boolean ;
 The FUSE program structure allows only the following at the top level:
 
 1. **Variable Declarations** (`let` or `global`)
-   - `let` declares a local variable (sprite/stage specific)
-   - `global` declares a global variable (accessible across all sprites)
+    - `let` declares a local variable (sprite/stage specific)
+    - `global` declares a global variable (accessible across all sprites)
 
 2. **Function Declarations** (`fn`)
-   - Define custom blocks/procedures
-   - Can have `once` modifier to indicate the function runs without screen refresh
+    - Define custom blocks/procedures
+    - Can have `once` modifier to indicate the function runs without screen refresh
 
 3. **Hat Blocks** (Event Handlers)
-   - Event-driven code execution
-   - Syntax: `expression { statements }`
-   - Examples: `event.start { ... }`, `event.keyPressed("space") { ... }`
+    - Event-driven code execution
+    - Syntax: `expression { statements }`
+    - Examples: `event.start { ... }`, `event.keyPressed("space") { ... }`
 
 4. **Namespace Declarations**
-   - Define configuration or mapping data
-   - Used for metadata or built-in block definitions
+    - Define configuration or mapping data
+    - Used for metadata or built-in block definitions
 
 ### Variable Scoping
 
