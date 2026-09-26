@@ -1,0 +1,3 @@
+[submodule "shrimpvm"]
+	path = shrimpvm
+	url = https://github.com/Shrimp-VM/shrimp-vm.git
