@@ -14,8 +14,8 @@
     "bugs": {
         "url": "https://github.com/shrimp-fuse/core/issues"
     },
-    "license": "MPL-2.0",
-    "author": "FurryR",
+    "license": "MIT",
+    "author": "陨落基围虾",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/shrimp-fuse/core.git"
