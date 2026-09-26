@@ -1,5 +1,5 @@
 import { Token, TokenType, Lexer } from "./lexer";
-import { ErrorList, sanitize } from "@scratch-fuse/utility";
+import { ErrorList, sanitize } from "@shrimp-fuse/utility";
 
 // AST Node Types
 export interface ASTNode {

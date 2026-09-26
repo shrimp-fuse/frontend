@@ -1,23 +1,24 @@
 {
-    "name": "@scratch-fuse/core",
+    "name": "@shrimp-fuse/core",
     "version": "1.0.0",
-    "description": "The core of fuse language",
+    "description": "The compiler frontend of fuse language",
     "keywords": [
         "blocks",
         "fuse",
         "parser",
-        "scratch",
-        "script"
+        "script",
+        "shrimp-ir",
+        "shrimp-vm"
     ],
-    "homepage": "https://github.com/scratch-fuse/core#readme",
+    "homepage": "https://github.com/shrimp-fuse/core#readme",
     "bugs": {
-        "url": "https://github.com/scratch-fuse/core/issues"
+        "url": "https://github.com/shrimp-fuse/core/issues"
     },
     "license": "MPL-2.0",
     "author": "FurryR",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/scratch-fuse/core.git"
+        "url": "git+https://github.com/shrimp-fuse/core.git"
     },
     "files": [
         "dist",
@@ -28,17 +29,19 @@
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
     "scripts": {
-        "dev": "tsup src/index.ts --watch",
+        "dev": "tsup --watch",
+        "build": "tsup",
+        "lint": "run-s lint:*",
         "lint:type": "tsc --noEmit",
-        "lint": "oxlint",
-        "format": "oxfmt",
-        "build": "tsup src/index.ts"
+        "lint:style": "oxlint",
+        "lint:format": "oxfmt"
     },
     "dependencies": {
-        "@scratch-fuse/utility": "github:scratch-fuse/utility#build"
+        "@shrimp-fuse/utility": "github:shrimp-fuse/utility#build"
     },
     "devDependencies": {
         "@types/node": "^24.5.2",
+        "npm-run-all": "^4.1.5",
         "oxfmt": "^0.70.0",
         "oxlint": "^1.85.0",
         "tsup": "^8.5.0",
